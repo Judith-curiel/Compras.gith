@@ -1,0 +1,99 @@
+
+    <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+        /* Fondo de la página */
+        body {
+            background: linear-gradient(to bottom right, #d16ba5, #86a8e7, #5ffbf1); /* Degradado colorido */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Encabezado */
+        h1 {
+            color: #333;
+            font-size: 28px;
+            margin-top: 20px;
+        }
+
+        /* Estilos del párrafo de descripción */
+        #demo3 {
+            font-size: 18px;
+            color: #222;
+            background-color: rgba(255, 255, 255, 0.9); /* Fondo semitransparente */
+            border-radius: 10px;
+            padding: 20px;
+            width: 80%;
+            margin: 20px auto;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Imagen */
+        img {
+            border-radius: 15px;
+            margin: 15px 0;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Botones */
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 18px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        /* Precio */
+        #demo2 {
+            font-size: 24px;
+            color: #444;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        function miFuncion() {
+            document.getElementById("demo3").innerHTML = "Párrafo CAMBIÓ con función";
+        }
+    </script>
+</head>
+
+<body>
+    <center>
+        <h1>Tenis Converse Día de Muertos Lift Multicolor en Bota de Lona Unisex</h1>
+        <button onclick="document.getElementById('myImage').src='converse1.webp'">Derecha</button>
+        <img id="myImage" src="converse1.webp" style="width: 450px">
+        <button onclick="document.getElementById('myImage').src='converse3.webp'">Frontal-Trasera</button>
+        <br>
+        <button onclick="document.getElementById('myImage').src='converse2.webp'">Izquierda</button>
+        <br>
+
+        <h3 id="demo3">Los diseños de la colección representan tradiciones reales para dar vida a las festividades
+            del Día de Muertos tanto en calzado como en ropa. Los elementos del altar cobran vida en los Chuck
+            Taylor 70s y Chuck Taylor All Star Lift. Cada diseño está inspirado en elementos auténticos de la
+            cultura mexicana, con velas, calaveras y Papel Picado que hacen un guiño a la unión de los vivos y los
+            muertos. Los Chuck Taylor 70s representan las velas y los elementos del altar, mientras que los Chuck
+            Taylor All Star Lift reconocen la decoración y el color del festival con el Papel Picado.</h3>
+        <button type="button" onclick="document.getElementById('demo3').style.display='none'">Ocultar</button>
+        <button type="button" onclick="document.getElementById('demo3').style.display='block'">Mostrar</button>
+    <p id="demo2">$2,599.00</p>
+        <button type="button" onclick="myFunction()">Cambio</button>
+    </center>
+    <script src="funcioncarrito.js"></script>
+</body>
+
+</html>
